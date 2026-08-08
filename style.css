@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(135deg, #0f172a 0%, #1d4ed8 45%, #38bdf8 100%), url("SGC.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    transition: 0.3s;
+}
+
+.dark {
+    background-image: linear-gradient(135deg, #020617 0%, #0f172a 50%, #1e293b 100%), url("SGC.jpg");
+    filter: brightness(0.92);
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    margin-top: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.input-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+input, button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    background: linear-gradient(145deg, #f8fafc, #cbd5e1);
+    color: #111827;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2), -3px -3px 8px rgba(255, 255, 255, 0.8);
+    transform: translateY(0);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+button:hover {
+    background: linear-gradient(145deg, #7dd3fc, #2563eb);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.25), -4px -4px 10px rgba(255, 255, 255, 0.8);
+}
+
+button:active {
+    transform: translateY(1px);
+    box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.2), inset -2px -2px 6px rgba(255, 255, 255, 0.6);
+}
+
+.export-btn {
+    margin-top: 10px;
+    background: linear-gradient(145deg, #38bdf8, #2563eb);
+    color: white;
+}
+
+#result {
+    text-align: center;
+    font-size: 25px;
+    margin: 15Px 0;
+    animation: fadeIn 0.6s ease-in;
+}
+
+/* Stats */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 0;
+    font-weight: bold;
+}
+.chart-box {
+    width: 70%;
+    margin: 30px auto;
+}
+
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.dark table, .dark th, .dark td {
+    border-color: #6d0404;
+}
+
+/* Rank Topper */
+.topper {
+    background: #fff3cd;
+    font-weight: bold;
+}
+
+/* Grade Colors */
+.Aplus { color: green; font-weight: bold; }
+.A { color: #dee11c; }
+.B { color: rgb(15, 105, 57); }
+.C { color: rgb(156, 15, 142); }
+.F { color: red; font-weight: bold; }
+
+/* Progress Bar */
+.progress {
+    background: #ddd;
+    height: 12px;
+    border-radius: 10px;
+}
+
+.progress-bar {
+    height: 100%;
+    background: #4CAF50;
+    border-radius: 10px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; }
+}
